@@ -30,7 +30,7 @@ body {
 }
 
 .container {
-    max-width: 85%;
+    width: 85%;   
     margin: 0 auto;
 }
 
@@ -83,7 +83,7 @@ p {
     border-radius: 30px;
     height: 40px;
     font-family: "Open Sans", sans-serif;
-    font-size: 0.75fem;
+    font-size: 0.75em;
     color: var(--Light-Grayish-Blue);
     padding: 0 30px;
     font-weight: 400;
@@ -217,7 +217,7 @@ h1 {
 /* ARTICLES */
 
 .articles {
-    padding: 75px 0;
+    padding: 75px 0 50px;
     background-color: var(--Very-Light-Gray);
 }
 
@@ -239,7 +239,7 @@ h1 {
     background-repeat: no-repeat; 
 }
 
-.box .preview-message {
+.preview-message {
     padding: 30px 20px 20px;
 }
 
@@ -305,6 +305,7 @@ footer .footer-icons {
 }
 
 .flex-right {
+    align-items: flex-end;
     width: 220px;
 }
 
@@ -321,16 +322,121 @@ footer svg:hover path{
     fill: var(--Lime-Green);
 }
 
-.flex-right {
-    align-items: flex-end;
-}
-
-.flex-right .btn {
-    width: 150px;
-}
-
 small {
     font-size: 0.75em;
     color: var(--Grayish-Blue);
 }
 
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 750px) {
+
+    body {
+        text-align: center;
+    }
+
+    .hero {
+        padding: 0 0 75px;
+        background-image: url(./images/bg-intro-mobile.svg);
+        background-size: 100%;
+        background-position: top -85px left;
+    }
+
+    .hero .container {
+        flex-direction: column-reverse;
+        padding-top: 350px;
+    }
+
+    .hero .info,
+    .hero-img {
+        width: 100%;
+    }
+
+    .hero-img img {
+        width: 100%;
+        position: absolute;
+        top: -475px;
+    }
+
+    h1 {
+        font-size: 2.3em;
+    }
+
+    h2 {
+        font-size: 1.75em;
+    }
+
+    .intro-p {
+        width: 100%;
+    }
+
+    .feature {
+        width: 100%;
+    }
+
+    .boxes {
+        margin-top: 3   0px;
+    }
+
+    .box {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .box .image {
+        height: 200px;
+    }
+
+    .preview-message {
+        text-align: left;
+        padding-bottom: 40px;
+    }
+    
+    footer .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .stretch {
+        align-items: center;
+    }
+
+    .links {
+        text-align: center;
+    }
+
+    .flex-down-mobile {
+        flex-direction: column;
+    }
+
+    .flex-right {
+        width: 100%;
+        align-items: center;
+    }
+
+    .left,
+    .flex-right .btn {
+        margin-bottom: 20px;
+    }
+
+    .footer-icons ul {
+        margin: 20px 0;
+    }
+
+    .links li {
+        margin-bottom: 10px;
+    }
+
+    .links:last-child li:last-child {
+        margin-bottom: 0;
+    }
+
+    
+}
