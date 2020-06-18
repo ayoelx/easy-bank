@@ -154,17 +154,17 @@ nav li:last-child {
     background-color: var(--Very-Light-Gray);
     padding: 150px 0;
     background-image: url(./images/bg-intro-desktop.svg);
-    background-position: top 70% right -400px;
-    background-size: 90%;
+    background-position: top -250px right -400px;
+    background-size: 1120px;
     background-repeat: no-repeat;
 }
 
 .info{
-    width: 40%;
+    width: 420px;
 }
 
 .hero-img {
-    width: 43%;
+    width: 447px;
     position: relative;
 }
 
@@ -331,7 +331,7 @@ small {
 
 /* MEDIA QUERIES */
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 600px) {
 
     body {
         text-align: center;
@@ -341,17 +341,18 @@ small {
         padding: 0 0 75px;
         background-image: url(./images/bg-intro-mobile.svg);
         background-size: 100%;
-        background-position: top -85px left;
+        background-position: top -100px left;
     }
 
     .hero .container {
         flex-direction: column-reverse;
-        padding-top: 350px;
+        padding-top: 325px;
     }
 
     .hero .info,
     .hero-img {
-        width: 100%;
+        width: 350px;
+        max-width: 100%;
     }
 
     .hero-img img {
